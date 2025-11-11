@@ -37,13 +37,6 @@ body {
   object-fit: cover;       /* crop without distortion */
 }
 
-.kaffe img:nth-child(1) {
-}
-
 .kaffe img:nth-child(2) {
   max-width: 35%;
-}
-
-.kaffe img:nth-child(3) {
-
 }
