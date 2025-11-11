@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Patriks kode</title>
+        <link rel="stylesheet" type="text/css"
+        href="../navbar.css" />
+    </head>
+    <body>
+
+        <header>
+            <h1>Patriks kode</h1>
+        </header>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../nettside.html">Nettsider</a></li>
+                <li><a href="../personas.html">Personas</a></li>
+                <li><a href="../wireframes.html">IA og wireframes</a></li>
+                <li><a href="../metoder.html">Agile metoder</a></li>
+                <li><a href="../system.html">Systemutviklingsmetoder</a></li>
+                <li><a href="../kontrakt.html">Kontrakt</a></li>
+            </ul>
+        </nav>
+        
+
+    <h1>HTML KODE</h1>
+    <pre><code>
+
+        &lt;!doctype html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;title&gt;Flat Coated Birk&lt;/title&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+        &lt;/head&gt;
+
+        &lt;body&gt;
+
+        &lt;Style&gt;
+
+                body{
+                background-color: lightblue;
+            }
+            &lt;/Style&gt;
+
+        &lt;h1 class=&quot;tittel-h1&quot;&gt;Patrik&lt;/h1&gt;
+
+        &lt;nav class=&quot;navbar&quot;&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;&lt;a href=&quot;../index.html&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;../nettside.html&quot;&gt;Nettsider&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;../personas.html&quot;&gt;Personas&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;&quot;&gt;Work in progress&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/nav&gt;
+
+        &lt;div class=&quot;innhold&quot;&gt;
+            &lt;h1&gt;Hei, verden! jeg heter Birk&lt;/h1&gt;
+
+            &lt;div class=&quot;bilde&quot;&gt;&lt;/div&gt;
+
+            &lt;h2&gt;Her var jeg med p&aring; potel&oslash;p og vant medalje!!&lt;/h2&gt;
+        &lt;/div&gt;
+
+        &lt;a href=&quot;https://www.instagram.com/flatcoat_birk/&quot; class=&quot;spesiell-link&quot;&gt;
+        bes&oslash;k birk p&aring; instagram
+        &lt;/a&gt;
+
+
+
+        &lt;/body&gt;
+        &lt;/html&gt;
+
+
+<h1>CSS KODE</h1>
+
+        body {
+            background-color: lightblue;  /* Bakgrunnsfarge */
+            color: darkgreen;                 /* Tekstfarge */
+
+            text-align: left;
+            padding: 20px;
+            margin: 0px;
+        }
+
+        /* sentrerer innholdet (tekst + bilde) */
+        .innhold {
+            text-align: center;         /* Sentrerer tekst */
+            display: flex;
+            flex-direction: column;     /* Plasserer elementene oppå hverandre */
+            align-items: center;        /* Sentrerer bildet horisontalt */
+        }
+
+        /* Overskrifter */
+            h1 {
+            color: darkgreen;
+            margin-bottom: 21.5px;
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            color: darkgreen;
+            margin-top: 10px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Bilde i en div */
+        .bilde {
+            width: 800px;
+            height: 600px;  /* Fast høyde nødvendig!! */
+            background-image: url("https://i.imgur.com/ORPlDFA.jpeg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 10px 0;
+        }
+
+        .spesiell-link {   /* instillinger for bare en link */
+            color: darkblue;  
+            font-weight: bold;
+        }
+
+
+
+
+        .tittel-h1 { 
+            border-style: solid;
+            border-width: 5px;
+            text-align: center;
+            border-color:lightblue;
+        }
+
+
+
+
+        .navbar ul{
+            list-style-type: none;
+            background-color: rgb(53, 53, 53);
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+        }
+
+        .navbar a{
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            display: block;
+            text-align: center ;
+        }
+
+        .navbar a:hover{
+        background-color: rgb(74, 74, 74);
+        }
+
+        .navbar li{
+            float: left;
+        }
+
+    </code></pre>
+
+    </body>
+</html>

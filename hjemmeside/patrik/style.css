@@ -1,0 +1,83 @@
+
+body {
+  background-color: lightblue;  /* Bakgrunnsfarge */
+  color: darkgreen;                 /* Tekstfarge */
+
+  text-align: left;
+  padding: 20px;
+  margin: 0px;
+}
+
+/* sentrerer innholdet (tekst + bilde) */
+.innhold {
+  text-align: center;         /* Sentrerer tekst */
+  display: flex;
+  flex-direction: column;     /* Plasserer elementene oppå hverandre */
+  align-items: center;        /* Sentrerer bildet horisontalt */
+}
+
+/* Overskrifter */
+h1 {
+  color: darkgreen;
+  margin-bottom: 21.5px;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  color: darkgreen;
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+}
+
+/* Bilde i en div */
+.bilde {
+  width: 800px;
+  height: 600px;  /* Fast høyde nødvendig!! */
+  background-image: url("https://i.imgur.com/ORPlDFA.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 10px 0;
+}
+
+.spesiell-link {   /* instillinger for bare en link */
+  color: darkblue;  
+  font-weight: bold;
+}
+
+
+
+
+.tittel-h1 { 
+    border-style: solid;
+    border-width: 5px;
+    text-align: center;
+    border-color:lightblue;
+}
+
+
+
+
+.navbar ul{
+    list-style-type: none;
+    background-color: rgb(53, 53, 53);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center ;
+}
+
+.navbar a:hover{
+background-color: rgb(74, 74, 74);
+}
+
+.navbar li{
+    float: left;
+}

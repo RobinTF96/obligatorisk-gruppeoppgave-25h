@@ -1,0 +1,188 @@
+body {
+    padding: 20px;
+    margin: 0px;
+}
+
+.body-stor{
+    padding: 50px;
+    margin: 0px;
+    text-align: center;
+    background-color: rgb(56, 149, 123);
+}
+
+.sentrert-h2 {
+    text-align: center;
+    line-height: 1.6;     /* mer luft mellom linjene */
+}
+
+h1 { 
+    border-style: solid;
+    border-width: 5px;
+    text-align: center;
+    border-color:white;
+}
+
+                            /* Min side */
+
+.fredrik-h1 {
+    border-style: solid;
+    border-width: 5px;
+    text-align: center;
+    border-color:rgb(136, 204, 226);
+    background-color: rgb(151, 215, 237); ;
+}
+
+.skins-box {
+  width: 500px;
+  border: 15px solid rgb(100, 165, 223);
+  padding: 0px;
+  margin: 10px ;   /* margin vertikalt, horisontalt håndteres av gap */
+  border-radius: 10px; /* valgfritt, gjør kantene rundere */
+  object-fit: cover; /* fyller boksen uten å forvrenge bildet */
+}
+
+.skins-box img {
+    max-width: 100%;   /* bildet blir ikke bredere enn boksen */
+    height: auto;      /* holder proporsjonene */
+    display: block;    /* fjerner liten underliggende linje */
+    border-radius: 0px; /* valgfritt, runde hjørner */
+    object-fit: cover;   /* fyller boksen uten å forvrenge bildet */
+}    
+
+
+
+                            /* Navbar */
+/*
+  Må ha med dette i body:
+  margin: 0px;
+  padding: 20px;
+
+  Og denne for code:
+  code {
+    display:block;
+    text-align: left;
+  }
+  */
+code {
+  display:block;
+  text-align: left;
+}
+
+.tittel-h1 { 
+    border-style: solid;
+    border-width: 5px;
+    text-align: center;
+    border-color:lightblue;
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color: rgb(53, 53, 53);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center ;
+}
+
+.navbar a:hover{
+background-color: rgb(74, 74, 74);
+}
+
+.navbar li{
+    float: left;
+}
+
+.personas-container {
+    display: flex;           /* setter barna i en rad */
+    gap: 20px;               /* avstand mellom boksene */
+    flex-wrap: wrap;         /* lar dem gå ned på ny rad på små skjermer */
+    justify-content: center;
+}
+
+.bio-box {
+  background-color: rgb(173, 209, 228);
+  width: 350px;
+  border: 15px solid rgb(47, 183, 142);
+  padding: 10px 30px ;
+  margin: 10px ;   /* margin vertikalt, horisontalt håndteres av gap */
+  border-radius: 10px; /* valgfritt, gjør kantene rundere */
+  line-height: 1.3;  /* mer luft mellom linjene */
+}
+
+.bio-box-stor {
+  background-color: rgb(173, 209, 228);
+  width: 900px;
+  border: 15px solid rgb(47, 183, 142);
+  padding: 10px 30px ;
+  margin: 10px ;   /* margin vertikalt, horisontalt håndteres av gap */
+  border-radius: 10px; /* valgfritt, gjør kantene rundere */
+  line-height: 1.5;  /* mer luft mellom linjene */
+  align-items: center;
+}
+
+.bilde-box {
+  width: 350px;
+  border: 15px solid rgb(47, 183, 142);
+  padding: 0px;
+  margin: 10px ;   /* margin vertikalt, horisontalt håndteres av gap */
+  border-radius: 10px; /* valgfritt, gjør kantene rundere */
+}
+
+.bilde-box img {
+    max-width: 100%;   /* bildet blir ikke bredere enn boksen */
+    height: auto;      /* holder proporsjonene */
+    display: block;    /* fjerner liten underliggende linje */
+    border-radius: 0px; /* valgfritt, runde hjørner */
+    object-fit: cover;   /* fyller boksen uten å forvrenge bildet */
+}    
+
+.motivasjon-box {
+  background-color: rgb(173, 209, 228);
+  width: 290px;
+  border: 15px solid rgb(47, 183, 142);
+  padding: 10px 30px ;
+  margin: 10px ;   /* margin vertikalt, horisontalt håndteres av gap */
+  border-radius: 10px; /* valgfritt, gjør kantene rundere */
+  line-height: 1.6;     /* mer luft mellom linjene */
+}
+
+.bio-box p {
+    margin-bottom: 10px;  /* litt luft under avsnittet */
+    line-height: 1.6;     /* mer luft mellom linjene */
+}
+
+.bio-box ul {
+    margin-left: -10px;    /* innrykk for punktene */
+    line-height: 1.6;     /* mer luft mellom linjene */
+}
+
+.bio-box li {
+    margin-bottom: 5px;   /* litt luft mellom punktene */
+    line-height: 1.6;     /* mer luft mellom linjene */
+}
+
+.personas-body {
+  background-color: rgb(56, 149, 123);
+  padding: 20px;
+  margin: 0px;
+}
+
+p.solid {border-style: solid;}  
+
+.personas-h1 { border-style: solid;
+    border-width: 5px;
+    border-color: rgb(103, 186, 162);
+    background-color: rgb(103, 186, 162) ;
+    text-align: center;
+}
+
+.ny-font {
+    font-family: 'Lato', sans-serif;
+}
