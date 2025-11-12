@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="nettside.css">
+    <meta charset="utf-8">
+    <title>Vi er Carl</title>
+</head>
+<body>
+    <header>
+        <h1>Carl Fredrik's kode</h1> 
+    </header>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../nettside.html">Nettsider</a></li>
+                <li><a href="../personas.html">Personas</a></li>
+                <li><a href="../wireframes.html">IA og wireframes</a></li>
+                <li><a href="../metoder.html">Agile metoder</a></li>
+                <li><a href="../system.html">Systemutviklingsmetoder</a></li>
+                <li><a href="../kontrakt.html">Kontrakt</a></li>
+            </ul>
+        </nav>
+
+    <h1>HTML KODE</h1>
+    <pre><code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang=&quot;no&quot;&gt; 
+        &lt;head&gt;
+            &lt;meta charset=&quot;UTC-8&quot;&gt;                                             
+            &lt;meta name=&quot;viewport&quot; content=&quot;device-width, initial scale=1.o&quot;&gt;  
+            &lt;title&gt;Vi er Carl&lt;/title&gt;
+            &lt;link rel=&quot;stylesheet&quot; href=&quot;nettside.css&quot;&gt;
+
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Mitt navn er Carl&lt;/h1&gt;
+            &lt;nav class=&quot;navbar&quot;&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href=&quot;nettside.html&quot;&gt;Hjem&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;bjarne.html&quot;&gt;Bjarne&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;Personas.html&quot;&gt;Personas&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+
+            &lt;/nav&gt;
+
+
+            &lt;p&gt;Carl Fredrik - 27 &aring;r gammel&lt;/p&gt; 
+            &lt;p&gt;Kommer ikke fra Fredrikstad&lt;/p&gt;       &lt;!--HTML kontrollerer ikke spacinga p&aring; paragrafer, det gj&oslash;res med css--&gt;
+            &lt;p&gt;GO T&oslash;nsberg Raiders&lt;/p&gt;
+
+            &lt;h2&gt;Dette er katten min Bjarne&lt;/h2&gt;
+            &lt;img src=&quot;https://veg-veg.no/media/hone.jpg&quot;&gt; 
+
+        &lt;/body&gt;
+
+
+
+        &lt;/html&gt;
+
+    </code></pre>
+
+    <h1>CSS KODE</h1>
+    <pre><code>
+        body{
+            background-color: beige;
+
+        }
+
+        h1{
+            text-decoration: overline underline;
+            text-align: center;
+            color: red;
+            text-shadow: 2px 2px 5px red   
+        }
+        .navbar ul{
+            list-style-type: none;
+            background-color: rgb(136, 77, 77);
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+        }
+        .navbar a{
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            display: block;
+            text-align: center; 
+        }
+        .navbar a:hover{
+            background-color: rgb(84, 46, 46);
+        }
+        .navbar li{
+            float: left;
+            
+
+        }
+
+        p{
+            font-family: sans-serif;
+            margin: 0px;
+            
+            
+
+        }
+    </code></pre>
+</body>
+</html>

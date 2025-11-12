@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="Styling.css">
+    <meta charset="utf-8">
+    <title>Henrik's kode</title>
+</head>
+<body>
+    <header>
+        <h1 class = "tittel_h1">Henrik's kode</h1> 
+    </header>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../nettside.html">Nettsider</a></li>
+                <li><a href="../personas.html">Personas</a></li>
+                <li><a href="../wireframes.html">IA og wireframes</a></li>
+                <li><a href="../metoder.html">Agile metoder</a></li>
+                <li><a href="../system.html">Systemutviklingsmetoder</a></li>
+                <li><a href="../kontrakt.html">Kontrakt</a></li>
+            </ul>
+        </nav>
+
+    <h1>HTML KODE</h1>
+    <pre><code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;title&gt;Henriks Nettside&lt;/title&gt;
+            &lt;link rel=&quot;stylesheet&quot; href=&quot;Styling.css&quot;&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;div class=&quot;overskrift&quot;&gt;
+                &lt;h1&gt;Shohei, min venn, ha en nydelig dag!&lt;/h1&gt;
+                &lt;div class=&quot;tanker&quot;&gt;&lt;/div&gt;
+                &lt;p&gt; Er jeg fordi jeg er?&lt;/p&gt;
+            &lt;/div&gt;
+
+            &lt;div&gt;
+                &lt;img class=&quot;bilde&quot; src=&quot;Bill.jpg&quot; alt=&quot;Bilde av Bill&quot; width=&quot;275&quot;&gt;
+            &lt;/div&gt;
+
+            &lt;a href=&quot;https://www.google.com/&quot; class=&quot;kobling&quot;&gt;
+            Wow for en link, en skikkelig kobling!
+            &lt;/a&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </code></pre>
+
+    <h1>CSS KODE</h1>
+    <pre><code>
+        body {
+            background-color:gray;
+            margin: 0px;
+            padding: 20px;
+        }
+
+
+        h1 {
+            color:brown;
+            font-family:Arial, Helvetica, sans-serif
+        }
+
+        p {
+            color:aqua;
+            font-family:Arial, Helvetica, sans-serif;
+            font-style:oblique
+        }
+
+        .bilde {
+            margin:20px auto;
+            border-radius:10px;
+            display:block;
+        }
+
+        code {
+            display:block;
+            text-align: left;
+        }
+
+        .tittel_h1 {
+            border-style: solid;
+            border-width: 5px;
+            text-align: center;
+            color: #ffffff;
+            border-color:#d1d1d171;
+            background-color: rgb(162, 162, 162);
+        }
+
+        .navbar ul{
+            list-style-type: none;
+            background-color: rgb(53, 53, 53);
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+        }
+
+        .navbar a{
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            display: block;
+            text-align: center ;
+        }
+
+        .navbar a:hover{
+            background-color: rgb(74, 74, 74);
+        }
+
+        .navbar li{
+            float: left;
+        }
+    </code></pre>
+</body>
+</html>

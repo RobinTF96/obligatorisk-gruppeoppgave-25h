@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="stil.css">
+    <meta charset="utf-8">
+    <title>Top Gun Vibes</title>
+</head>
+<body>
+    <header>
+        <h1>Amal's kode</h1> 
+    </header>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../nettside.html">Nettsider</a></li>
+                <li><a href="../personas.html">Personas</a></li>
+                <li><a href="../wireframes.html">IA og wireframes</a></li>
+                <li><a href="../metoder.html">Agile metoder</a></li>
+                <li><a href="../system.html">Systemutviklingsmetoder</a></li>
+                <li><a href="../kontrakt.html">Kontrakt</a></li>
+            </ul>
+        </nav>
+
+    <h1>HTML KODE</h1>
+    <pre><code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang=&quot;no&quot;&gt;
+        &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;title&gt;Top Gun Vibes&lt;/title&gt;
+            &lt;link rel=&quot;stylesheet&quot; href=&quot;stil.css&quot;&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+
+            &lt;!-- Header med Top Gun-logo --&gt;
+            &lt;header&gt;
+                &lt;div class=&quot;logo&quot;&gt;
+                    &lt;span class=&quot;wing left&quot;&gt;&lt;/span&gt;
+                    &lt;span class=&quot;star&quot;&gt;&starf;&lt;/span&gt;
+                    &lt;span class=&quot;text&quot;&gt;TOP GUN&lt;/span&gt;
+                    &lt;span class=&quot;wing right&quot;&gt;&lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/header&gt;
+
+            &lt;!-- Hero-seksjon med bakgrunn og animert tekst --&gt;
+            &lt;section class=&quot;hero&quot;&gt;
+                &lt;h2 id=&quot;animated-text&quot;&gt;Gi gass&lt;/h2&gt;
+            &lt;/section&gt;
+
+            &lt;main&gt;
+                &lt;p&gt;
+                    &lt;strong&gt; Velkommen&lt;/strong&gt;.  
+                    frihet og action i luften! &#x1F680;
+                &lt;/p&gt;
+
+                &lt;button onclick=&quot;playSound()&quot;&gt;Start Motorene&lt;/button&gt;
+                &lt;button class=&quot;takeoff&quot;&gt;Take Off&lt;/button&gt;
+            &lt;/main&gt;
+
+            &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+        &lt;img src=&quot;https://variety.com/wp-content/uploads/2022/05/tgm-ff-002r-e1653665735116.jpg?w=1000&amp;h=527&amp;crop=1&quot;&gt; 
+
+
+
+
+    </code></pre>
+
+    <h1>CSS KODE</h1>
+    <pre><code>
+        /* Bakgrunn med stjernehimmel */
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Impact', sans-serif;
+            background: radial-gradient(ellipse at bottom, #0a0a0a 0%, #1a1a1a 100%);
+            color: white;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        /* Top Gun-logo */
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Impact', sans-serif;
+            font-size: 2em;
+            color: #f00;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            position: relative;
+            margin: 10px 0;
+        }
+
+        .logo .wing {
+            display: inline-block;
+            width: 50px;
+            height: 10px;
+            background-color: #f00;
+            margin: 0 10px;
+            transform: rotate(30deg);
+            animation: wing-flap 1s infinite ease-in-out;
+        }
+
+        .logo .wing.right {
+            transform: rotate(-30deg);
+        }
+
+        .logo .star {
+            font-size: 1.5em;
+            margin: 0 10px;
+        }
+
+        .logo .text {
+            margin: 0 10px;
+            animation: glow 1.5s infinite alternate;
+        }
+
+        /* Animasjoner for logo */
+        @keyframes wing-flap {
+            0%, 100% { transform: rotate(30deg); }
+            50% { transform: rotate(20deg); }
+        }
+        @keyframes glow {
+            0%, 100% { text-shadow: 0 0 5px #f00; }
+            50% { text-shadow: 0 0 20px #ff4444; }
+        }
+
+        /* Hero-seksjon med jagerfly */
+        .hero {
+            background: url("fighterjet.jpg") center/cover no-repeat;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 2px solid #f00;
+        }
+
+        .hero h2 {
+            font-size: 2.5em;
+            background: rgba(0,0,0,0.6);
+            padding: 15px 25px;
+            border: 2px solid #f00;
+            animation: flyin 2s ease-out forwards;
+        }
+
+        /* Animasjon for hero-tekst */
+        @keyframes flyin {
+            from { transform: translateY(-200px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 20px auto;
+            line-height: 1.6;
+        }
+
+        /* Knapper */
+        button {
+            background-color: #f00;
+            color: white;
+            font-size: 1.2em;
+            border: none;
+            padding: 15px 30px;
+            margin: 20px 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+            text-transform: uppercase;
+        }
+
+        button:hover {
+            background-color: #ff4444;
+            transform: scale(1.1);
+        }
+
+        /* Takeoff-knapp animasjon */
+        button.takeoff:active {
+            position: relative;
+            animation: takeoff 2s forwards;
+        }
+
+        @keyframes takeoff {
+            to { transform: translateY(-300px) scale(0.5); opacity: 0; }
+        }
+
+        code {
+        display:block;
+        text-align: left;
+        }
+
+        h1 {
+            border-style: solid;
+            border-width: 5px;
+            text-align: center;
+            color: white;
+            border-color:#2e2e2e99;
+            background-color: #292929;
+            font-family: initial;
+        }
+
+        .navbar ul{
+            list-style-type: none;
+            background-color: rgb(53, 53, 53);
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+            font-family: initial;
+        }
+
+        .navbar a{
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            display: block;
+            text-align: center ;
+            font-family: initial;
+        }
+
+        .navbar a:hover{
+            background-color: rgb(74, 74, 74);
+            font-family: initial;
+        }
+
+        .navbar li{
+            float: left;
+            font-family: initial;
+        }
+    </code></pre>
+</body>
+</html>

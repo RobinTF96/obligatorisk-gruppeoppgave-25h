@@ -1,0 +1,58 @@
+body{
+  margin: 0px;
+  padding: 20px;
+}
+
+main{
+    margin-left: 20px; /*Størrelsen på marginen på venstresiden av mainbody*/
+    margin-right: 20px; /*Størrelsen på marginene på høyresiden av mainbody*/
+}
+h1{
+    text-align: center; /*Sentrerer headerteksten på hevr side*/
+    margin-top: 20px;
+}
+code {
+  display:block;
+  text-align: left;
+}
+
+h1 {
+    border-style: solid;
+    border-width: 5px;
+    text-align: center;
+    color: #000000;
+    border-color:#ffa9b971;
+    background-color: #ffb8bf;
+    font-family: initial;
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color: rgb(53, 53, 53);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    font-family: initial;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center ;
+    font-family: initial;
+}
+
+.navbar a:hover{
+background-color: rgb(74, 74, 74);
+}
+
+.navbar li{
+    float: left;
+}
+
+
+.tzu{
+    border: 3px solid black;
+}

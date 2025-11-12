@@ -135,6 +135,22 @@ background-color: rgb(74, 74, 74);
   border-radius: 10px; /* valgfritt, gjør kantene rundere */
 }
 
+.bilde-box-struktur {
+  width: 90vw;
+  border: 15px solid rgb(47, 183, 142);
+  padding: 0px;
+  margin: 10px ;   /* margin vertikalt, horisontalt håndteres av gap */
+  border-radius: 10px; /* valgfritt, gjør kantene rundere */
+}
+
+.bilde-box-struktur img {
+    max-width: 100%;   /* bildet blir ikke bredere enn boksen */
+    height: auto;      /* holder proporsjonene */
+    display: block;    /* fjerner liten underliggende linje */
+    border-radius: 0px; /* valgfritt, runde hjørner */
+    object-fit: cover;   /* fyller boksen uten å forvrenge bildet */
+}
+
 .bilde-box img {
     max-width: 100%;   /* bildet blir ikke bredere enn boksen */
     height: auto;      /* holder proporsjonene */
@@ -172,6 +188,7 @@ background-color: rgb(74, 74, 74);
   background-color: rgb(56, 149, 123);
   padding: 20px;
   margin: 0px;
+  text-align: center;
 }
 
 p.solid {border-style: solid;}  
@@ -185,4 +202,13 @@ p.solid {border-style: solid;}
 
 .ny-font {
     font-family: 'Lato', sans-serif;
+}
+
+ul {
+  text-align: center;
+  list-style-position: inside;
+}
+
+#struktur {
+
 }

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="no">
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <title>Min nettside</title>
+            <link rel="stylesheet" type="text/css"
+            href="../navbar.css" />
+         </head>
+
+    <body>
+
+            <Style>
+
+                body{
+                background-color: lightblue;
+            }
+            </Style>
+
+
+        <header>
+            <h1 class="fredrik-h1">Fredrik's kode</h1>
+        </header>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../nettside.html">Nettsider</a></li>
+                <li><a href="../personas.html">Personas</a></li>
+                <li><a href="../wireframes.html">IA og wireframes</a></li>
+                <li><a href="../metoder.html">Agile metoder</a></li>
+                <li><a href="../system.html">Systemutviklingsmetoder</a></li>
+                <li><a href="../kontrakt.html">Kontrakt</a></li>
+            </ul>
+        </nav>
+
+        <h1 class="fredrik-h1">HTML KODE</h1>
+
+        <pre><code>
+
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang=&quot;no&quot;&gt;
+                    &lt;head&gt;
+                        &lt;meta charset=&quot;UTF-8&quot; /&gt;
+                        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot; /&gt;
+                        &lt;title&gt;Min nettside&lt;/title&gt;
+                        &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;
+                        href=&quot;../navbar.css&quot; /&gt;
+                    &lt;/head&gt;
+
+                &lt;body&gt;
+
+                        &lt;Style&gt;
+
+                            body{
+                            background-color: lightblue;
+                        }
+                        &lt;/Style&gt;
+
+
+                    &lt;header&gt;
+                        &lt;h1 class=&quot;fredrik-h1&quot;&gt;Fredrik&lt;/h1&gt;
+                    &lt;/header&gt;
+
+                    &lt;nav class=&quot;navbar&quot;&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;&lt;a href=&quot;../index.html&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;../nettside.html&quot;&gt;Nettsider&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;../personas.html&quot;&gt;Personas&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;../wireframes.html&quot;&gt;IA og wireframes&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;../metoder.html&quot;&gt;Agile metoder&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;../system.html&quot;&gt;Systemutviklingsmetoder&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;../kontrakt.html&quot;&gt;Kontrakt&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/nav&gt;
+
+                    &lt;main&gt;
+                        &lt;h1 class=&quot;fredrik-h1&quot;&gt;Top skins jeg har hatt&lt;/h1&gt;
+                    &lt;/main&gt;
+
+                    &lt;section class=&quot;personas-container&quot;&gt;
+
+                        &lt;div class=&quot;skins-box&quot;&gt;
+                                &lt;img src=&quot;Gungnir.jpeg&quot; /&gt; 
+                        &lt;/div&gt;
+
+                        &lt;div class=&quot;skins-box&quot;&gt;
+                                &lt;h2 class=&quot;sentrert-h2&quot;&gt;Gungnir&lt;/h2&gt;
+                                    &lt;P class=&quot;ny-font&quot;&gt;    
+                                &lt;ul&gt;
+                                        &lt;li&gt;Et veldig sjeldent skin med sirka 3400 eksisterende&lt;/li&gt;&lt;br&gt;
+                                        &lt;li&gt;Kj&oslash;pte den for 50k og gikk opp til 90k f&oslash;r selgeren tok den tilbake&lt;/li&gt;&lt;br&gt;
+                                        &lt;li&gt;The AWP | Gungnir was introduced with The Norse Collection on November 18, 2019.&lt;/li&gt;&lt;br&gt;
+                                        &lt;li&gt;Er veldig ettertraktet pga det ikke er s&aring; mange bl&aring; AWP skins&lt;/li&gt;
+                                &lt;/ul&gt;
+                                    &lt;/P&gt;
+                        &lt;/div&gt;
+
+
+                    &lt;/section&gt;
+
+                &lt;/body&gt;
+
+            &lt;/html&gt;
+
+        </code></pre>
+
+        <h1 class="fredrik-h1">CSS KODE</h1>
+
+        <pre><code>
+
+            body {
+                padding: 20px;
+                margin: 0px;
+            }
+
+            .body-stor{
+                padding: 50px;
+                margin: 0px;
+                text-align: center;
+                background-color: rgb(56, 149, 123);
+            }
+
+            .sentrert-h2 {
+                text-align: center;
+                line-height: 1.6;     /* mer luft mellom linjene */
+            }
+
+            h1 { 
+                border-style: solid;
+                border-width: 5px;
+                text-align: center;
+                border-color:white;
+            }
+
+                                        /* Min side */
+
+            .fredrik-h1 {
+                border-style: solid;
+                border-width: 5px;
+                text-align: center;
+                border-color:rgb(136, 204, 226);
+                background-color: rgb(151, 215, 237); ;
+            }
+
+            .skins-box {
+                width: 500px;
+                border: 15px solid rgb(100, 165, 223);
+                padding: 0px;
+                margin: 10px ;   /* margin vertikalt, horisontalt håndteres av gap */
+                border-radius: 10px; /* valgfritt, gjør kantene rundere */
+                object-fit: cover; /* fyller boksen uten å forvrenge bildet */
+            }
+
+            .skins-box img {
+                max-width: 100%;   /* bildet blir ikke bredere enn boksen */
+                height: auto;      /* holder proporsjonene */
+                display: block;    /* fjerner liten underliggende linje */
+                border-radius: 0px; /* valgfritt, runde hjørner */
+                object-fit: cover;   /* fyller boksen uten å forvrenge bildet */
+            }    
+
+
+
+                                        /* Navbar */
+            /*
+            Må ha med dette i body:
+            margin: 0px;
+            padding: 20px;
+
+            Og denne for code:
+            code {
+                display:block;
+                text-align: left;
+            }
+            */
+            code {
+                display:block;
+                text-align: left;
+            }
+
+            .tittel-h1 { 
+                border-style: solid;
+                border-width: 5px;
+                text-align: center;
+                border-color:lightblue;
+            }
+
+            .navbar ul{
+                list-style-type: none;
+                background-color: rgb(53, 53, 53);
+                padding: 0px;
+                margin: 0px;
+                overflow: hidden;
+            }
+
+            .navbar a{
+                color: white;
+                text-decoration: none;
+                padding: 15px;
+                display: block;
+                text-align: center ;
+            }
+
+            .navbar a:hover{
+                background-color: rgb(74, 74, 74);
+            }
+
+            .navbar li{
+                float: left;
+            }
+
+            .personas-container {
+                display: flex;           /* setter barna i en rad */
+                gap: 20px;               /* avstand mellom boksene */
+                flex-wrap: wrap;         /* lar dem gå ned på ny rad på små skjermer */
+                justify-content: center;
+            }
+
+            .bio-box {
+                background-color: rgb(173, 209, 228);
+                width: 350px;
+                border: 15px solid rgb(47, 183, 142);
+                padding: 10px 30px ;
+                margin: 10px ;   /* margin vertikalt, horisontalt håndteres av gap */
+                border-radius: 10px; /* valgfritt, gjør kantene rundere */
+                line-height: 1.3;  /* mer luft mellom linjene */
+            }
+
+            .bio-box-stor {
+                background-color: rgb(173, 209, 228);
+                width: 900px;
+                border: 15px solid rgb(47, 183, 142);
+                padding: 10px 30px ;
+                margin: 10px ;   /* margin vertikalt, horisontalt håndteres av gap */
+                border-radius: 10px; /* valgfritt, gjør kantene rundere */
+                line-height: 1.5;  /* mer luft mellom linjene */
+                align-items: center;
+            }
+
+            .bilde-box {
+                width: 350px;
+                border: 15px solid rgb(47, 183, 142);
+                padding: 0px;
+                margin: 10px ;   /* margin vertikalt, horisontalt håndteres av gap */
+                border-radius: 10px; /* valgfritt, gjør kantene rundere */
+            }
+
+            .bilde-box img {
+                max-width: 100%;   /* bildet blir ikke bredere enn boksen */
+                height: auto;      /* holder proporsjonene */
+                display: block;    /* fjerner liten underliggende linje */
+                border-radius: 0px; /* valgfritt, runde hjørner */
+                object-fit: cover;   /* fyller boksen uten å forvrenge bildet */
+            }    
+
+            .motivasjon-box {
+                background-color: rgb(173, 209, 228);
+                width: 290px;
+                border: 15px solid rgb(47, 183, 142);
+                padding: 10px 30px ;
+                margin: 10px ;   /* margin vertikalt, horisontalt håndteres av gap */
+                border-radius: 10px; /* valgfritt, gjør kantene rundere */
+                line-height: 1.6;     /* mer luft mellom linjene */
+            }
+
+            .bio-box p {
+                margin-bottom: 10px;  /* litt luft under avsnittet */
+                line-height: 1.6;     /* mer luft mellom linjene */
+            }
+
+            .bio-box ul {
+                margin-left: -10px;    /* innrykk for punktene */
+                line-height: 1.6;     /* mer luft mellom linjene */
+            }
+
+            .bio-box li {
+                margin-bottom: 5px;   /* litt luft mellom punktene */
+                line-height: 1.6;     /* mer luft mellom linjene */
+            }
+
+            .personas-body {
+                background-color: rgb(56, 149, 123);
+                padding: 20px;
+                margin: 0px;
+            }
+
+            p.solid {border-style: solid;}  
+
+            .personas-h1 { border-style: solid;
+                border-width: 5px;
+                border-color: rgb(103, 186, 162);
+                background-color: rgb(103, 186, 162) ;
+                text-align: center;
+            }
+
+            .ny-font {
+                font-family: 'Lato', sans-serif;
+            }
+
+        </code></pre>
+
+    </body>
+
+</html>
